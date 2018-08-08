@@ -1,0 +1,25 @@
+@import 'common';
+
+.header-container {
+  background-color: $brand-dark-gray;
+
+  @media (min-width: 768px) {
+    height: 68px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    right: 0;
+  }
+}
+
+nav {
+  a {
+    color: lighten($brand-dark-gray, 30%);
+
+    &:hover, &.selected {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}

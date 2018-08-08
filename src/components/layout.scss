@@ -1,0 +1,10 @@
+.responsive-full-width {
+  width: 100%;
+
+  @media (min-width: 1012px) {
+    max-width: 56em;
+    top: 88px;
+    left: 30%;
+    order: 1;
+  }
+}
