@@ -6,12 +6,6 @@ import logoSvg from '../assets/color_logo_transparent.svg'
 import commonStyles from './common.scss'
 import './header.scss'
 
-const NavLink = props => (
-  <Link to={props.to} activeClassName="selected" className="px-md-1 px-lg-2">
-    {props.children}
-  </Link>
-)
-
 const HamburgerMenu = props => (
   <Menu
     right
@@ -24,14 +18,14 @@ const HamburgerMenu = props => (
         top: '20px',
       },
       bmBurgerBars: {
-        background: '#888'
+        background: '#888',
       },
       bmCrossButton: {
         height: '24px',
-        width: '24px'
+        width: '24px',
       },
       bmCross: {
-        background: commonStyles.brandDarkGray,
+        background: '#fff',
       },
       bmMenu: {
         backgroundColor: commonStyles.brandDarkGray,

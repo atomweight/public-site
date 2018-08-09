@@ -11,7 +11,6 @@ const OpenSourcePage = ({ data }) => (
     <div className="md-order-1 d-flex flex-lg-column flex-auto flex-wrap">
       <Masthead
         imageSizes={data.masthead.childImageSharp.sizes}
-        color={commonStyles.brandDarkGray}
         heading="Open Source Projects"
       >
         <p className="alt-lead">
@@ -29,7 +28,7 @@ export default OpenSourcePage
 
 export const query = graphql`
   query {
-    masthead: file(relativePath: { eq: "mh/clement-m-492662-unsplash.jpg" }) {
+    masthead: file(relativePath: { eq: "mh/matthew-smith-5935-unsplash.jpg" }) {
       childImageSharp {
         sizes(maxWidth: 2480, quality: 90, toFormat: PNG) {
           ...GatsbyImageSharpSizes
