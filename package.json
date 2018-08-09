@@ -23,6 +23,7 @@
     "primer-core": "^6.10.3",
     "primer-layout": "^1.4.9",
     "react": "^16.4.1",
+    "react-burger-menu": "^2.5.2",
     "react-dom": "^16.4.1",
     "react-emotion": "^9.2.6",
     "react-helmet": "^5.2.0",

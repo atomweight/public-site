@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { slide as Menu } from 'react-burger-menu'
 
 import logoSvg from '../assets/color_logo_transparent.svg'
 import commonStyles from './common.scss'
@@ -11,9 +12,58 @@ const NavLink = props => (
   </Link>
 )
 
+const HamburgerMenu = props => (
+  <Menu
+    right
+    styles={{
+      bmBurgerButton: {
+        position: 'fixed',
+        width: '36px',
+        height: '30px',
+        right: '24px',
+        top: '20px',
+      },
+      bmBurgerBars: {
+        background: '#888'
+      },
+      bmCrossButton: {
+        height: '24px',
+        width: '24px'
+      },
+      bmCross: {
+        background: commonStyles.brandDarkGray,
+      },
+      bmMenu: {
+        backgroundColor: commonStyles.brandDarkGray,
+        padding: '2.5em 1.5em 0',
+        fontSize: '1.15em'
+      },
+      bmMorphShape: {
+        fill: '#fff'
+      },
+      bmItemList: {
+        color: '#b8b7ad',
+        padding: '0.8em'
+      },
+      bmItem: {
+        display: 'block'
+      },
+      bmOverlay: {
+        background: 'rgba(0, 0, 0, 0.3)'
+      },
+    }}
+    {...props}
+  >
+    <a className="h1" href="/open-source">open source</a>
+    <a className="h1" href="/success-stories/">success stories</a>
+    <a className="h1" href="/why">why atomweight</a>
+    <a className="h1" href="/about">about us</a>
+  </Menu>
+)
+
 const Header = ({ siteTitle }) => (
   <div
-    className="header-container d-flex flex-justify-between px-5 pl-md-6 pr-md-6 py-3 box-shadow"
+    className="header-container d-flex flex-justify-between px-md-5 pl-md-6 pr-md-6 py-1 box-shadow"
     style={{
       backgroundColor: commonStyles.brandDarkGray,
       zIndex: 5,
@@ -38,16 +88,10 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
-    <div className="d-none d-lg-flex flex-justify-end">
-      <nav className="flex-self-center flex-shrink-0 text-white" aria-label="Primary">
-        {/* <NavLink to="/blog">blog</NavLink> */}
-        <NavLink to="/open-source">open source</NavLink>
-        <NavLink to="/success-stories/">success stories</NavLink>
-        <NavLink to="/why">why atomweight</NavLink>
-        <NavLink to="/about">about us</NavLink>
-      </nav>
-    </div>
   </div>
 )
 
-export default Header
+export {
+  HamburgerMenu,
+  Header,
+}

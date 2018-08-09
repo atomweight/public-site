@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import 'primer/index.scss'
 
-import Header from './header'
+import { HamburgerMenu, Header } from './header'
 import './layout.scss'
 
 const MainContent = props => (
@@ -40,6 +40,7 @@ const Layout = ({ children, data }) => (
             },
           ]}
         />
+        <HamburgerMenu width={350} />
         <Header siteTitle={data.site.siteMetadata.title} />
         <div className="d-flex flex-wrap flex-lg-nowrap">
           {children}
