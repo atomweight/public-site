@@ -3,7 +3,6 @@ import { graphql } from 'gatsby'
 import 'primer-core/index.scss'
 
 import { Layout, MainContent } from '../components/layout'
-import commonStyles from '../components/common.scss'
 import Masthead from '../components/masthead'
 
 const OpenSourcePage = ({ data }) => (

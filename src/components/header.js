@@ -45,6 +45,9 @@ const HamburgerMenu = props => (
       bmOverlay: {
         background: 'rgba(0, 0, 0, 0.3)'
       },
+      bmMenuWrap: {
+        backgroundColor: commonStyles.brandDarkGray,
+      }
     }}
     {...props}
   >
