@@ -56,6 +56,7 @@ const HamburgerMenu = props => (
     <a className="h1" href="/success-stories/">success stories</a>
     <a className="h1" href="/why">why atomweight</a>
     <a className="h1" href="/about">about us</a>
+    <a className="h1" href="/contact">contact us</a>
   </Menu>
 )
 

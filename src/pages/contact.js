@@ -14,7 +14,16 @@ export default ({ data }) => (
       >
       </Masthead>
       <MainContent className="flex-row flex-lg-column mt-4 mt-lg-6 pb-6 mx-auto px-3">
-        <form name="contact" method="POST" netlify="true">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
+            <input name="bot-field" />
+          </p>
           <dl className="form-group">
             <dt><label htmlFor="name">Your Name</label></dt>
             <dd>
