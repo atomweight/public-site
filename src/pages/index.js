@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 import 'primer-core/index.scss'
 
