@@ -34,7 +34,7 @@ const Layout = ({ children, data }) => (
           meta={[
             {
               name: 'description',
-              content: 'Atomweight is a Baltimore-based software engineering and devops consultancy.',
+              content: 'Atomweight is a software engineering and devops consultancy.',
             },
             {
               name: 'keywords',
