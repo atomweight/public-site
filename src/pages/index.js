@@ -98,8 +98,8 @@ const IndexPage = ({ data }) => (
 
         <h1 className="alt-h1">Reach out</h1>
         <p className="alt-lead">
-          We&rsquo;d love to hear from you. Drop us a line
-          at <a href="mailto:info@atomweight.io">info@atomweight.io</a>.
+          We&rsquo;d love to hear from you.
+          {' '}<Link to="/contact">Drop us a line!</Link>
         </p>
       </MainContent>
 
