@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-// import 'primer-core/index.scss'
 import Octicon, {MarkGithub} from '@github/octicons-react'
 
 import { Layout, MainContent } from '../components/layout'

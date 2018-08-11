@@ -54,7 +54,7 @@ Masthead.propTypes = {
 
 Masthead.defaultProps = {
   color: '#fff',
-  height: '50vh',
+  height: '30vh',
 }
 
 export default Masthead

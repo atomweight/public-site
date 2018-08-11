@@ -6,11 +6,13 @@ import { StaticQuery, graphql } from 'gatsby'
 import 'primer/index.scss'
 
 import { HamburgerMenu, Header } from './header'
+import Footer from './footer'
 import './layout.scss'
 
 const MainContent = props => (
   <main className={`main-content responsive-full-width ${props.className}`}>
     {props.children}
+    <Footer />
   </main>
 )
 

@@ -102,6 +102,7 @@ const IndexPage = ({ data }) => (
           at <a href="mailto:info@atomweight.io">info@atomweight.io</a>.
         </p>
       </MainContent>
+
     </div>
   </Layout>
 )

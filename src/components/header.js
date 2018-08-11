@@ -43,7 +43,7 @@ const HamburgerMenu = props => (
         display: 'block'
       },
       bmOverlay: {
-        background: 'rgba(0, 0, 0, 0.3)'
+        background: 'rgba(0, 0, 0, 0.8)'
       },
       bmMenuWrap: {
         backgroundColor: commonStyles.brandDarkGray,
@@ -51,6 +51,7 @@ const HamburgerMenu = props => (
     }}
     {...props}
   >
+    {/* <a className="h1" href="/blog">blog</a> */}
     <a className="h1" href="/open-source">open source</a>
     <a className="h1" href="/success-stories/">success stories</a>
     <a className="h1" href="/why">why atomweight</a>
